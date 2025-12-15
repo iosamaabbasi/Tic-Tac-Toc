@@ -2,7 +2,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #0b1020, #0a0f1c, #070b16);
-  color: #eaeaf0;
+  color: #089ff7;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -34,13 +34,13 @@ body {
 .title {
   font-size: 2rem;
   font-weight: 600;
-  color: #c7d2fe;
+  color: #e7a310;
   margin-bottom: 16px;
 }
 
 /* ===== STATUS ===== */
 .status {
-  color: #a5b4fc;
+  color: #e2851a;
   margin-bottom: 12px;
   font-size: 0.95rem;
 }
@@ -63,10 +63,10 @@ body {
   border: 1px solid rgba(165, 180, 252, 0.25);
   background: linear-gradient(
     145deg,
-    rgba(28, 33, 70, 0.95),
-    rgba(15, 18, 40, 0.95)
+    rgba(6, 27, 180, 0.95),
+    rgba(5, 29, 212, 0.95)
   );
-  color: #f8fafc;
+  color: #19ce6a;
   cursor: pointer;
   transition: all 0.18s ease;
 }
@@ -84,12 +84,12 @@ body {
 .highlight {
   background: linear-gradient(135deg, #6366f1, #22d3ee) !important;
   color: #020617;
-  box-shadow: 0 0 25px rgba(99, 102, 241, 0.7);
+  box-shadow: 0 0 25px rgba(28, 163, 1, 0.7);
 }
 
 /* ===== BUTTON ===== */
 .btn {
-  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  background: linear-gradient(135deg, #c4c704, #22d3ee);
   border: none;
   padding: 10px 22px;
   border-radius: 12px;
@@ -100,14 +100,14 @@ body {
 }
 
 .btn:hover {
-  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+  box-shadow: 0 8px 25px rgba(197, 54, 11, 0.6);
 }
 
 /* ===== OUTLINE BUTTON ===== */
 .btn.outline {
   background: transparent;
-  border: 1px solid rgba(165, 180, 252, 0.6);
-  color: #a5b4fc;
+  border: 1px solid rgba(13, 134, 43, 0.6);
+  color: #3e187c;
 }
 
 /* ===== NEON BUTTON ===== */
@@ -119,7 +119,7 @@ body {
 /* ===== CHIPS ===== */
 .chip {
   background: transparent;
-  border: 1px solid rgba(165, 180, 252, 0.4);
+  border: 1px solid rgba(127, 134, 168, 0.4);
   border-radius: 999px;
   padding: 6px 16px;
   color: #c7d2fe;
@@ -129,7 +129,7 @@ body {
 }
 
 .chip.active {
-  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  background: linear-gradient(135deg, #0b6458, #22d3ee);
   color: #020617;
   border-color: transparent;
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .popup h2 {
-  color: #e0e7ff;
+  color: #f7f30f;
   margin-bottom: 20px;
 }
 
