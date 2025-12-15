@@ -1,44 +1,48 @@
-/* ===== ROOT THEME ===== */
+/* ===== GLOBAL ===== */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #020617, #020617, #030712);
-  color: #e5e7eb;
+  background: linear-gradient(135deg, #0b1020, #0a0f1c, #070b16);
+  color: #eaeaf0;
   margin: 0;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 
-/* ===== APP CENTER ===== */
+/* ===== APP ROOT ===== */
 .app-root {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* ===== MAIN CARD ===== */
+/* ===== CARD ===== */
 .card {
-  background: rgba(15, 23, 42, 0.85);
+  background: rgba(20, 24, 48, 0.88);
   backdrop-filter: blur(14px);
   border-radius: 22px;
-  padding: 32px;
+  padding: 30px;
   width: 90%;
   max-width: 420px;
   text-align: center;
   border: 1px solid rgba(148, 163, 184, 0.15);
-  box-shadow:
-    0 10px 40px rgba(0, 0, 0, 0.6),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75);
 }
 
 /* ===== TITLE ===== */
 .title {
   font-size: 2rem;
   font-weight: 600;
-  color: #e5e7eb;
-  letter-spacing: 0.5px;
-  margin-bottom: 20px;
+  color: #c7d2fe;
+  margin-bottom: 16px;
+}
+
+/* ===== STATUS ===== */
+.status {
+  color: #a5b4fc;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
 }
 
 /* ===== BOARD ===== */
@@ -47,7 +51,7 @@ body {
   grid-template-columns: repeat(3, 100px);
   gap: 12px;
   justify-content: center;
-  margin: 24px auto;
+  margin: 20px auto;
 }
 
 /* ===== SQUARE ===== */
@@ -56,11 +60,11 @@ body {
   height: 100px;
   font-size: 2.4rem;
   border-radius: 14px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  border: 1px solid rgba(165, 180, 252, 0.25);
   background: linear-gradient(
     145deg,
-    rgba(30, 41, 59, 0.9),
-    rgba(15, 23, 42, 0.9)
+    rgba(28, 33, 70, 0.95),
+    rgba(15, 18, 40, 0.95)
   );
   color: #f8fafc;
   cursor: pointer;
@@ -71,21 +75,21 @@ body {
   transform: translateY(-2px);
   background: linear-gradient(
     145deg,
-    rgba(56, 189, 248, 0.25),
-    rgba(30, 41, 59, 0.9)
+    rgba(99, 102, 241, 0.35),
+    rgba(28, 33, 70, 0.95)
   );
 }
 
 /* ===== WIN HIGHLIGHT ===== */
 .highlight {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9) !important;
+  background: linear-gradient(135deg, #6366f1, #22d3ee) !important;
   color: #020617;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.6);
+  box-shadow: 0 0 25px rgba(99, 102, 241, 0.7);
 }
 
-/* ===== BUTTONS ===== */
+/* ===== BUTTON ===== */
 .btn {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
   border: none;
   padding: 10px 22px;
   border-radius: 12px;
@@ -96,42 +100,41 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.45);
+  box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
 }
 
-/* OUTLINE */
+/* ===== OUTLINE BUTTON ===== */
 .btn.outline {
   background: transparent;
-  border: 1px solid rgba(56, 189, 248, 0.6);
-  color: #38bdf8;
+  border: 1px solid rgba(165, 180, 252, 0.6);
+  color: #a5b4fc;
 }
 
-/* NEON */
+/* ===== NEON BUTTON ===== */
 .btn.neon {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
-  box-shadow: 0 0 25px rgba(56, 189, 248, 0.8);
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.9);
 }
 
 /* ===== CHIPS ===== */
 .chip {
   background: transparent;
-  border: 1px solid rgba(148, 163, 184, 0.35);
+  border: 1px solid rgba(165, 180, 252, 0.4);
   border-radius: 999px;
   padding: 6px 16px;
-  color: #cbd5f5;
+  color: #c7d2fe;
   margin: 0 6px;
   cursor: pointer;
   transition: 0.2s;
 }
 
 .chip.active {
-  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
   color: #020617;
   border-color: transparent;
 }
 
-/* ===== TOP CONTROLS ===== */
+/* ===== TOP ROWS ===== */
 .controls-top,
 .top-row {
   display: flex;
@@ -141,51 +144,29 @@ body {
   flex-wrap: wrap;
 }
 
-/* ===== STATUS ===== */
-.status {
-  color: #94a3b8;
-  font-size: 0.95rem;
-}
-
 /* ===== OVERLAY ===== */
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(2, 6, 23, 0.85);
-  backdrop-filter: blur(8px);
+  background: rgba(5, 8, 20, 0.88);
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.25s ease;
 }
 
 /* ===== POPUP ===== */
 .popup {
-  background: rgba(15, 23, 42, 0.95);
-  padding: 32px 42px;
+  background: rgba(20, 24, 48, 0.95);
+  padding: 30px 40px;
   border-radius: 22px;
   text-align: center;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  border: 1px solid rgba(165, 180, 252, 0.2);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
-  animation: pop 0.35s ease;
 }
 
 .popup h2 {
-  font-size: 1.9rem;
-  font-weight: 600;
-  color: #f8fafc;
-  margin-bottom: 18px;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes pop {
-  from { transform: scale(0.92); opacity: 0; }
-  to { transform: scale(1); opacity: 1; }
+  color: #e0e7ff;
+  margin-bottom: 20px;
 }
 
 /* ===== MOBILE ===== */
